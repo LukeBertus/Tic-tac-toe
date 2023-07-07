@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{}
+
+html,
+body,
+.wrap,
+.overlay{
+    height: 100%;
+}
+
+.overlay{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer{
+    background-color: red;
+    height: 70%;
+    width: 40%;
+    display: grid;
+    grid-template: 1fr 3fr / 1fr;
+}
+form {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width:  100%;
+}
+.title{
+    font: 4rem 'caprasimo';
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
