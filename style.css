@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root{}
@@ -16,19 +17,23 @@ body,
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: 'images/pan-background.jpg';
+    background-image: url('images/pen-background.jpg');
+    background-size: cover;
 }
 .playerContainer {
     display: flex;
     flex-direction: column;
+    width: 80%;
+    justify-self: center;
 }
 .formContainer{
-    background-color: red;
-    height: 70%;
-    width: 40%;
+    background-color: rgb(244, 237, 237);
+    height: max(55%, 30rem);
+    width: max(32%, 30rem);
     display: grid;
     grid-template: 1fr 3fr / 1fr;
     border-radius: 2rem;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
 }
 form {
     display: grid;
@@ -38,37 +43,48 @@ form {
     height: 100%;
     width:  100%;
 }
+form > .playerContainer:nth-child(1) {
+    margin-top: 1rem;
+}
+form > .playerContainer:nth-child(2) {
+    margin-bottom: 1rem;
+}
 .playerContainer > input {
     width: 100%;
-    height: 2rem;
+    height: 2.5rem;
     border-radius: 0.5rem;
     align-self: center;
+    font: 1.8rem 'ubuntu';
 }
 .playerContainer > label {
     font: 700 2rem 'ubuntu';
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.4rem;
+    color: #1D5B79;
 }
 .play {
-    height: 60%;
+    height: 65%;
     width: 80%;
-    align-self: center;
+    align-self: top;
     justify-self: center;
     border-radius: 1.5rem;
-    font: 700 2rem 'ubuntu';
-    background-color: white;
-    color: rgb(255, 196, 0)
-}
-.title{
     font: 4rem 'caprasimo';
+    background-color: #1D5B79;
+    color: #EF6262;
+    margin-bottom: 2rem;
+}
+
+.title{
+    font: 5rem 'caprasimo';
     justify-self: center;
     align-self: center;
+    color: #F3AA60;
 }
 .titleContainer{
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: center;
-    background-color: brown;
+    background-color: #1D5B79;
     border-radius: 2rem 2rem 0 0;
 }
 
