@@ -16,29 +16,61 @@ body,
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: 'images/pan-background.jpg';
 }
-
+.playerContainer {
+    display: flex;
+    flex-direction: column;
+}
 .formContainer{
     background-color: red;
     height: 70%;
     width: 40%;
     display: grid;
     grid-template: 1fr 3fr / 1fr;
+    border-radius: 2rem;
 }
 form {
     display: grid;
     grid-template: repeat(3, 1fr) / 1fr;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     height: 100%;
     width:  100%;
+}
+.playerContainer > input {
+    width: 100%;
+    height: 2rem;
+    border-radius: 0.5rem;
+    align-self: center;
+}
+.playerContainer > label {
+    font: 700 2rem 'ubuntu';
+    margin-bottom: 0.2rem;
+}
+.play {
+    height: 60%;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    border-radius: 1.5rem;
+    font: 700 2rem 'ubuntu';
+    background-color: white;
+    color: rgb(255, 196, 0)
 }
 .title{
     font: 4rem 'caprasimo';
     justify-self: center;
     align-self: center;
 }
-
+.titleContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: brown;
+    border-radius: 2rem 2rem 0 0;
+}
 
 
 
