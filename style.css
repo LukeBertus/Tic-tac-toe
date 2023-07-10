@@ -4,7 +4,12 @@
     box-sizing: border-box;
 }
 
-:root{}
+:root{
+    --sea-blue: #1D5B79;
+    --aqua: #468B97;
+    --salmon: #EF6262;
+    --warmth: #F3AA60;
+}
 
 html,
 body,
@@ -59,7 +64,7 @@ form > .playerContainer:nth-child(2) {
 .playerContainer > label {
     font: 700 2rem 'ubuntu';
     margin-bottom: 0.4rem;
-    color: #1D5B79;
+    color: var(--sea-blue);
 }
 .play {
     height: 65%;
@@ -68,8 +73,8 @@ form > .playerContainer:nth-child(2) {
     justify-self: center;
     border-radius: 1.5rem;
     font: 4rem 'caprasimo';
-    background-color: #1D5B79;
-    color: #EF6262;
+    background-color: var(--sea-blue);
+    color: var(--salmon);
     margin-bottom: 2rem;
 }
 
@@ -77,14 +82,14 @@ form > .playerContainer:nth-child(2) {
     font: 5rem 'caprasimo';
     justify-self: center;
     align-self: center;
-    color: #F3AA60;
+    color: var(--warmth);
 }
 .titleContainer{
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: center;
-    background-color: #1D5B79;
+    background-color: var(--sea-blue);
     border-radius: 2rem 2rem 0 0;
 }
 
