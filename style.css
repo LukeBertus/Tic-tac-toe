@@ -22,8 +22,9 @@ body,
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('images/pen-background.jpg');
-    background-size: cover;
+    background-image: url('images/whiteboard.jpg');
+    background-size: 120%;
+    background-position: -20rem 0rem;
 }
 .playerContainer {
     display: flex;
@@ -76,8 +77,13 @@ form > .playerContainer:nth-child(2) {
     background-color: var(--sea-blue);
     color: var(--salmon);
     margin-bottom: 2rem;
+    border: 3px solid var(--salmon);
 }
-
+.play:hover {
+    color: var(--sea-blue);
+    background-color: var(--salmon);
+    border: 3px solid var(--sea-blue)
+}
 .title{
     font: 5rem 'caprasimo';
     justify-self: center;
