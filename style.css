@@ -14,17 +14,27 @@
 html,
 body,
 .wrap,
-.overlay{
+.overlay,
+.main {
     height: 100%;
 }
-
+.main {
+    /* position: fixed; */
+    width: 100%;
+    background-image: url('images/whiteboard.jpg');
+    background-size: 3900px;
+    background-position: -90rem 0rem;
+    z-index: 1;
+}
 .overlay{ 
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: url('images/whiteboard.jpg');
-    background-size: 120%;
-    background-position: -20rem 0rem;
+    background-size: 2800px;
+    background-position: -45rem 0rem;
+    width: 100%;
 }
 .playerContainer {
     display: flex;
@@ -98,9 +108,47 @@ form > .playerContainer:nth-child(2) {
     background-color: var(--sea-blue);
     border-radius: 2rem 2rem 0 0;
 }
-
-
-
+.gameboardContainer {
+    height: 72%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: grey; */
+}
+.gameboard {
+    height: 85%;
+    width: 50%;
+    display: grid;
+    grid-template: repeat(2, 1fr 2rem) 1fr / repeat(2, 1fr 2rem) 1fr;
+}
+.footer {
+    height: 28%;
+    background-color: azure;
+    display: flex;
+}
+.playerContainer{
+    height: 50%;
+}
+.cell {
+    background-color: aliceblue;
+}
+.line {
+    background-color: black;
+}
+.lineTop {
+    border-radius: 1rem 1rem 0 0;
+}
+.lineBottom {
+    border-radius: 0 0 1rem 1rem;
+}
+.line:nth-child(6),
+.line:nth-child(16){
+    border-radius: 1rem 0 0 1rem;
+}
+.line:nth-child(10),
+.line:nth-child(20) {
+    border-radius: 0 1rem 1rem 0;
+}
 
 
 
