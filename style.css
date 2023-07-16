@@ -126,8 +126,21 @@ form > .playerContainer:nth-child(2) {
     background-color: azure;
     display: flex;
 }
-.playerContainer{
-    height: 50%;
+.userContainer1{
+    flex: 1;
+    display: grid;
+    grid-template: 8rem 1fr / min-content 10rem;
+    align-items: center;
+}
+.userContainer2{
+    flex: 1;
+    display: grid;
+    grid-template: 8rem 1fr / 10rem min-content;
+    align-items: center;
+    justify-content: right;
+}
+.restartContainer{
+    width:  15rem;
 }
 .cell {
     background-color: aliceblue;
@@ -149,7 +162,48 @@ form > .playerContainer:nth-child(2) {
 .line:nth-child(20) {
     border-radius: 0 1rem 1rem 0;
 }
-
+.username {
+    width: 60%;
+    height: 5rem;
+    font: 700 5rem 'ubuntu';
+    margin: 2rem;
+}
+.turnIndicator{
+    width: 4rem;
+    margin-top: 1rem;
+}
+.loadingContainer2 {
+    justify-self: right;
+}
+.token1 {
+    width: 7rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+.token2 {
+    width: 7rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+.tokenContainer2 {
+    grid-area: 2/2 / 3/3;
+    justify-self: right;
+    align-self: top;
+}
+.restartContainer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.restart{
+    width: 20rem;
+    height: 8rem;
+    background-color: var(--sea-blue);
+    color: white;
+    font: 700 4rem 'ubuntu';
+    cursor: pointer;
+    border-radius: 2rem;
+}
 
 
 
