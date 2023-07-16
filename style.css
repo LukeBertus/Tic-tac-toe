@@ -203,9 +203,16 @@ form > .playerContainer:nth-child(2) {
     font: 700 4rem 'ubuntu';
     cursor: pointer;
     border-radius: 2rem;
+    transition: all 100ms;
 }
-
-
+.restart:hover {
+    background-color: #216c91;
+}
+.restart:active {
+    translate: 1px 1px;
+    box-shadow: none;
+    border: 2px solid rgb(131, 131, 131);
+}
 
 
 
